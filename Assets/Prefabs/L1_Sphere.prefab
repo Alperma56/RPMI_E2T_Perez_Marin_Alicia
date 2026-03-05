@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7599818260086657084}
   - component: {fileID: 1728189526811127332}
   - component: {fileID: 8400367259112499303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: L1_Sphere
   m_TagString: Mergeable
   m_Icon: {fileID: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   mergeLevel: 1
   nextLevelPrefab: {fileID: 1678621665206019239, guid: 83458783f90dff142a100dc43e2fe910, type: 3}
   spawnNext: {fileID: 8843115486304673807}
+  contador: {fileID: 0}
 --- !u!54 &8400367259112499303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8843115486304673807}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawnNext
   m_TagString: Untagged
   m_Icon: {fileID: 0}

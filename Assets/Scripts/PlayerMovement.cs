@@ -18,15 +18,15 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            transform.Translate(Vector3.back * speed);
+            transform.Translate(Vector3.back * speed, Space.World);
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            transform.Translate(Vector3.left * speed);
+            transform.Translate(Vector3.left * speed, Space.World);
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            transform.Translate(Vector3.right * speed);
+            transform.Translate(Vector3.right * speed, Space.World);
         }
     }
 }

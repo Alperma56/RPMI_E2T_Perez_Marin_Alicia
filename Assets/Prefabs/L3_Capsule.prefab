@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4855738440703915711}
   - component: {fileID: 8469805703435106528}
   - component: {fileID: -5364814522540704043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: L3_Capsule
   m_TagString: Mergeable
   m_Icon: {fileID: 0}

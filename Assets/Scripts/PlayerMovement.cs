@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
         // Comprobamos qué tecla se está pulsando para el movimiento del jugador
         if (Input.GetKeyDown(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * speed);
+            transform.Translate(Vector3.forward * speed, Space.World);
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {

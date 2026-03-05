@@ -112,10 +112,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
+  m_Radius: 0.63417137
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000059604645, y: 0, z: 0.054637074}
 --- !u!114 &1502941532219643893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   mergeLevel: 2
   nextLevelPrefab: {fileID: 3443012678824665734, guid: 3529782a606445243b8888c14f3ad1e8, type: 3}
   spawnNext: {fileID: 5613795765690152879}
+  contador: {fileID: 0}
 --- !u!54 &-724267068085062515
 Rigidbody:
   m_ObjectHideFlags: 0

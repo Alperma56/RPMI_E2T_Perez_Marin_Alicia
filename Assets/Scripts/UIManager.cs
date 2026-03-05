@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 /// <summary>
 /// Script que gestiona los elementos de la interfaz durante el juego
@@ -15,6 +16,10 @@ public class UIManager : MonoBehaviour
     /// <summary>
     /// Método público que incrementa el contador de fusiones y actualiza el texto
     /// </summary>
+    private void Update()
+    {
+        mergeCountText.text = mergeCount.ToString();
+    }
     public void AddMerge()
     {
         mergeCountText.text = "Merges: " + mergeCount;

@@ -21,11 +21,13 @@ public class PlayerDetector : MonoBehaviour
     // Registra si ya está resaltado
     private bool isHighlighted;
 
+    public Transform spawnRaycast;
+
     // Update se ejecuta una vez por frame
     private void Update()
     {
         // Lanzamos un Raycast para detectar objetos mergeables
-        if (Physics.Raycast(transform.position, transform.forward, detectionRange, LayerMask.GetMask("Mergeable")))
+        if (Physics.Raycast(spawnRaycast.position, spawnRaycast.forward, detectionRange, LayerMask.GetMask("Mergeable")))
         {
             if (!isHighlighted)
             {

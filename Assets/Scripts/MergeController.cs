@@ -14,6 +14,15 @@ public class MergeController : MonoBehaviour
     // Variable para evitar que un mismo objeto se fusione dos veces
     private bool hasMerged = false;
 
+    public Transform spawnNext;
+
+    public UIManager contador;
+
+    private void Start()
+    {
+        contador=GameObject.Find("UIManager").GetComponent<UIManager>();
+    }
+
     // Se ejecuta cuando este objeto colisiona con otro
     private void OnCollisionEnter(Collision collision)
     {
@@ -41,12 +50,14 @@ public class MergeController : MonoBehaviour
                         // Si hay un prefab de siguiente nivel, lo instanciamos en la posición de este objeto
                         if (nextLevelPrefab != null)
                         {
-                            Instantiate(nextLevelPrefab, Vector3.zero, Quaternion.identity);
+                            Instantiate(nextLevelPrefab, spawnNext.position, spawnNext.rotation);
+                           
                         }
 
                         // Destruimos ambos objetos originales
                         Destroy(otherMerge.gameObject);
                         Destroy(gameObject);
+                        contador.AddMerge();
                     }
                 }
             }

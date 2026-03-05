@@ -48,9 +48,9 @@ public class PlayerDetector : MonoBehaviour
         }
     }
 
-    //    private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    //Gizmos.DrawRay();
-    //}
+        private void OnDrawGizmos()
+   {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(spawnRaycast.position,detectionRange*transform.forward);
+   }
 }
